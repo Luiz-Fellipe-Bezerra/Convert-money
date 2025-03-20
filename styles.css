@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 	#363636;
+    filter: drop-shadow(3px 3px 1px #000000);
+}
+.principal {
+    width: 300px;
+    height: 500px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #d2d2d2;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+}
+
+.section-labels {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-labels select {
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: #acacac solid 2px;
+    font-size: 15px;
+    filter: drop-shadow(3px 1px 1px #363636);
+    cursor: pointer;
+}
+
+.input-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: #acacac solid 2px;
+    transition: 0.15 all ease;
+    filter: drop-shadow(3px 1px 1px #363636)
+}
+
+.input-button input:focus {
+    border-color: black;
+}
+
+.input-button input::placeholder {
+    color: transparent;
+}
+
+.input-button .lbl {
+    position: absolute;
+    top: 164px;
+    left: 43px;
+    font-size: 15px;
+    padding: 0 10px;
+    color: black; 
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.input-button input:focus + .lbl, 
+.input-button input:not(:placeholder-shown) + 
+.lbl {
+    transform: translate(1px, -24px);
+    font-size: 15px;
+    color: black;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    border: #acacac solid 2px;
+    filter: drop-shadow(3px 1px 1px #363636);
+    cursor: pointer;
+    transition: 0.15s all ease;
+}
+
+button:hover {
+    background-color: #acacac;
+    color: #eee;
+}
+
+
+.first-option, .second-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+img {
+    height: 44px;
+    width: 44px;
+}
