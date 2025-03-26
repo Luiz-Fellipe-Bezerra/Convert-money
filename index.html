@@ -11,42 +11,43 @@
     <main class="principal">
         <section class="section-labels">
             <label for=""> Converter <b>de</b>
-                <select name="" id="">
-                    <option value="">Real</option>
-                    <option value="">Dólar</option>
-                    <option value="">Euro</option>
-                    <option value="">Libra</option>
+                <select name="" id="first-select">
+                    <option id="" value="Real">R$ Real</option>
+                    <option id="" value="Dolar">$ Dólar</option>
+                    <option id="" value="Euro">€ Euro</option>
+                    <option id="" value="Libra">£ Libra</option>
                 </select>
             </label>
             <label for=""> Converter <b>para</b>
-                <select name="" id="">
-                    <option value="">Real</option>
-                    <option value="">Dólar</option>
-                    <option value="">Euro</option>
-                    <option value="">Libra</option>
+                <select name="" id="second-select">
+                    <option id="" value="Dolar">$ Dólar</option>
+                    <option id="" value="Real">R$ Real</option>
+                    <option id="" value="Euro">€ Euro</option>
+                    <option id="" value="Libra">£ Libra</option>
                 </select>
             </label>
         </section>
             <div class="input-button">
-                <input type="text" placeholder="Valor" id="">
+                <input type="text" placeholder="Valor" id="value">
                 <label class="lbl">Valor</label>
-                <button>Converter</button>
+                <button id="convert-button">Converter</button>
             </div>
             
         
         <section class="section-result">
             <div class="first-option">
-                <img src="./assets/brasil 2.png" alt="">
-                <p>R$ Real</p>
-                <h3>R$ 10.000,00</h3>
+                <img class="first-image" src="./assets/brasil-2.png" alt="">
+                <p class="paragraph-to-convert">R$ Real</p>
+                <h3 id="currency-to-convert">R$0,00</h3>
             </div>               
             <div class="second-option">
-                <img src="./assets/estados-unidos (1) 1.png" alt="">
-                <p>U$ Dólar Americano</p>
-                <h3>U$ 2.000,00</h3>
+                <img class="second-image" src="./assets/estados-unidos-1.png" alt="">
+                <p class="converted-paragraph">$ Dólar</p>
+                <h3 id="converted-currency">$0.00</h3>
             </div>
         </section>
     </main>
 </body>
 <script src="./scripst.js"></script>
 </html>
+

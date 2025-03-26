@@ -38,7 +38,7 @@ body {
     width: 80%;
     height: 30px;
     border-radius: 20px;
-    padding-left: 10px;
+    text-align: center;
     border: #acacac solid 2px;
     font-size: 15px;
     filter: drop-shadow(3px 1px 1px #363636);
@@ -73,7 +73,7 @@ input {
 .input-button .lbl {
     position: absolute;
     top: 164px;
-    left: 43px;
+    left: 118px;
     font-size: 15px;
     padding: 0 10px;
     color: black; 
